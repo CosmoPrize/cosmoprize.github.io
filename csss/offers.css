@@ -1,0 +1,551 @@
+.actions {
+    width: 810px;
+    margin: 10px auto;
+	}
+
+.actions .action {
+    width: 260px;
+    
+    float: left;
+    margin: 00px 4px 20px 4px;
+
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 16px;
+
+   /*  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3); */
+
+    background-color: #FF1493;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f0efef), to(#e2e3e4));
+    background-image: -webkit-linear-gradient(top, #f0efef, #e2e3e4);
+    background-image: -o-linear-gradient(top, #f0efef, #e2e3e4);
+    background-image: linear-gradient(to bottom, #fff, #FF1493);
+    background-image: -moz-linear-gradient(top, #f0efef, #e2e3e4);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#f0efef', endColorstr='#e2e3e4', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+	border: 1px solid #86c6e3;
+}
+
+.actions .action, .actions .action a {
+    font-family: NeoSansPro, Arial, sans-serif;
+	text-decoration: none;
+}
+
+.actions .header {
+    display: block;
+    min-height: 30px;
+    font-size: 16px;
+    font-style:bold;
+	color: #1b1b1b;
+    text-decoration: none;
+    padding: 15px 0px 0px 0px; 
+    cursor: pointer;
+}
+
+.actions .header .name {
+    text-transform: uppercase;
+	padding: 0px 0px 0px 20px;
+}
+
+.actions .desc {
+    min-height: 42px;
+    height: 42px;
+    overflow: hidden;
+    padding: 5px 8px;
+    font-size: 12px;
+
+    background-color: #86c6e3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#aad2e8), to(#86c6e3));
+    background-image: -webkit-linear-gradient(top, #aad2e8, #86c6e3);
+    background-image: -o-linear-gradient(top, #aad2e8, #86c6e3);
+    background-image: linear-gradient(to bottom, #aad2e8, #86c6e3);
+    background-image: -moz-linear-gradient(top, #aad2e8, #86c6e3);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#aad2e8', endColorstr='#86c6e3', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.actions .img {
+    position: relative;
+    height: auto;
+}
+
+.action .img .discount {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("action-d.png");
+    width: 53px;
+    height: 36px;
+    text-align: right;
+    padding: 5px 2px 0 0;
+    font-size: 18px;
+    color: #FFF;
+
+    text-shadow: 1px 1px 1px #000;
+    -moz-text-shadow: 1px 1px 1px #000;
+    -webkit-text-shadow: 1px 1px 1px #000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#000');
+}
+
+.action .img .more {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    padding: 8px 14px 3px 14px;
+
+    -webkit-box-shadow: 0 -1px 5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0 -1px 5px rgba(255, 255, 255, 1);
+    box-shadow: 0 -1px 5px rgba(255, 255, 255, 1);
+}
+
+.action .img .more * {
+    position: relative;
+}
+
+.action .img .more .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FFF;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+.action .price {
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    background: #FFF;
+}
+.action .old-price {
+    font-size: 12px;
+    padding: 0 0 0 13px;
+}
+
+.action .old-price span {
+    text-decoration: line-through;
+}
+
+.action .new-price {
+    position: absolute;
+    right: 0px;
+    top: -15px;
+    background: url("strip000.png");
+    width: 95px;
+    height: 43px;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 0 0 19px;
+}
+
+.action .new-price span {
+    font-size: 18px;
+    margin: 0 3px 0 0;
+}
+
+.action .end {
+    position: relative;
+    height: 19px;
+	background:#e2e3e4;
+    padding: 3px 13px 0px 13px;
+}
+
+
+.action .end .label {
+    font-size: 11px;
+	margin:2px;
+}
+
+.action .end .timer {
+    position: absolute;
+    right: 13px;
+    top: 3px;
+    font-size: 14px;
+}
+
+.action .end .timer .days,
+.action .end .timer .time {
+    display: inline-block;
+}
+
+.action .end .timer .days {
+    margin-right: 5px;
+}
+
+.action  .ok {
+    position: relative;
+    height: 40px;
+    padding: 2px 13px 2px 13px;
+	text-decoration:none;
+	
+}
+
+.action  .ok  .enter{
+    font-size:26px;
+	text-decoration:none;
+    position: relative;
+    height: 20px;
+    padding: 5px 13px 2px 13px;
+	text-align:center;
+	color: #fff
+}
+
+.action  .ok .enter a:link , a:visited
+{
+display:block;
+text-decoration:none;
+color: #fff
+}
+/*.action  .ok .enter a:hover,a:active
+{
+background-color:#fff;
+}
+*/
+.actions .see-more {
+    text-align: center;
+    margin: 24px 0 0 0;
+}
+
+.actions .see-more .btn {
+    font-size: 21px;
+    padding: 3px 20px;
+}
+
+
+
+
+
+
+
+.actions1 {
+position: relative;
+    width: 1080px;  /*810*/
+    height:auto;
+    margin: 10px auto;
+	}
+
+.actions1 .action1 {
+position: relative;
+    width: 350px;   /* 350*/
+    height:auto;
+    float: left;
+    margin: 00px 4px 20px 4px;
+
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 16px;
+
+   /*  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3); */
+
+    background-color: #FF1493;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f0efef), to(#e2e3e4));
+    background-image: -webkit-linear-gradient(top, #f0efef, #e2e3e4);
+    background-image: -o-linear-gradient(top, #f0efef, #e2e3e4);
+    background-image: linear-gradient(to bottom, #FF1493, #FF1493);
+    background-image: -moz-linear-gradient(top, #f0efef, #e2e3e4);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#f0efef', endColorstr='#e2e3e4', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+	border: 1px solid #86c6e3;
+}
+
+.actions1 .action2 {
+position: relative;
+    width: 580px;  /*440*/
+    height: auto;
+    float: left;
+    margin: 00px 4px 20px 4px;
+font-size: 12px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 16px;
+
+   /*  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3); */
+
+    background-color:#FF1493;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f0efef), to(#e2e3e4));
+    background-image: -webkit-linear-gradient(top, #f0efef, #e2e3e4);
+    background-image: -o-linear-gradient(top, #f0efef, #e2e3e4);
+    background-image: linear-gradient(to bottom, #FF1493, #e2e3e4);
+    background-image: -moz-linear-gradient(top, #f0efef, #e2e3e4);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#f0efef', endColorstr='#e2e3e4', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+	border: 1px solid #86c6e3;
+}
+.actions1 .action2 .zagolovok_akcii
+{position:relative;
+word-wrap: break-word;
+text-align:center;
+float:left;
+width: 560px;  /*420*/
+height: 40px;
+padding: 10px 10px 10px 10px;
+font-size: 18px;
+margin: 0 0px 0 0;
+color:white;
+
+}
+.actions1 .action2 .zagolovok_akcii2
+{position:relative;
+word-wrap:break-word;
+float:left;
+width: 560px;   /*420*/
+height: auto;
+padding: 10px 10px 10px 10px;
+font-size: 14px;
+margin: 0 00px 0 00px;
+background-color:rgb(227, 246, 252);
+}
+
+.actions1 .action2 .zagolovok_akcii2 h1
+{position:relative;
+word-wrap:break-word;
+float:left;
+width: 560px;  /*420*/
+height: auto;
+padding: 0 10px 10px 10px;
+font-size: 16px;
+margin: 0 00px 0 00px;
+font-weight: bold;
+}
+
+.actions1 .action2 .zagolovok_akcii2 p
+{position:relative;
+font-family:neosanspro, arial, sans-serif;
+word-wrap:break-word;
+float:left;
+width: 560px;
+height: auto;
+padding: 0 10px 10px 10px;
+font-size: 14px;
+margin: 0 00px 0 00px;
+
+}
+
+.actions1 .action2 .zagolovok_akcii2 p strong
+{position:relative;
+font-family:neosanspro, arial, sans-serif;
+word-wrap:break-word;
+float:left;
+width: 560px;
+height: auto;
+margin: 0 00px 0 00px;
+padding: 5px 10px 10px 10px;
+font-weight: bold
+}
+
+.actions1 .action2 .zagolovok_akcii2 j
+{position:relative;
+font-family:neosanspro, arial, sans-serif;
+word-wrap:break-word;
+float:left;
+width: 560px;
+height: auto;
+margin: 0 00px 0 00px;
+padding: 5px 10px 5px 10px;
+}
+
+.actions1 .action2 .img2 {
+    position: relative;
+	float:left;
+    height: 60px;
+}
+
+
+
+.actions1 .action1, .actions1 .action1 a {
+    font-family: NeoSansPro, Arial, sans-serif;
+}
+
+.actions1 .header1 {
+    display: block;
+    min-height: 40px;
+    font-size: 18px;
+    font-weight: bolder;
+	color: #fff;
+    text-decoration: none;
+    padding: 20px 0px 0px 0px; 
+    cursor: pointer;
+}
+
+.actions1 .header1 .name1 {
+    text-transform: uppercase;
+	padding: 0px 0px 0px 20px;
+}
+
+.actions1 .desc1 {
+    min-height: 42px;
+    height: 42px;
+    overflow: hidden;
+    padding: 5px 8px;
+    font-size: 12px;
+
+    background-color: #86c6e3;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#aad2e8), to(#86c6e3));
+    background-image: -webkit-linear-gradient(top, #aad2e8, #86c6e3);
+    background-image: -o-linear-gradient(top, #aad2e8, #86c6e3);
+    background-image: linear-gradient(to bottom, #aad2e8, #86c6e3);
+    background-image: -moz-linear-gradient(top, #aad2e8, #86c6e3);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#aad2e8', endColorstr='#86c6e3', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.actions1 .img1 {
+    position: relative;
+    height: auto;
+}
+
+.action1 .img1 .discount1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("action-d.png");
+    width: 53px;
+    height: 36px;
+    text-align: right;
+    padding: 5px 2px 0 0;
+    font-size: 18px;
+    color: #FFF;
+
+    text-shadow: 1px 1px 1px #000;
+    -moz-text-shadow: 1px 1px 1px #000;
+    -webkit-text-shadow: 1px 1px 1px #000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#000')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=1, Direction=135, Color='#000');
+}
+
+.action1 .img1 .more1 {
+    position: absolute;
+    display: none;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    padding: 8px 14px 3px 14px;
+
+    -webkit-box-shadow: 0 -1px 5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0 -1px 5px rgba(255, 255, 255, 1);
+    box-shadow: 0 -1px 5px rgba(255, 255, 255, 1);
+}
+
+.action1 .img1 .more1 * {
+    position: relative;
+}
+
+.action1 .img1 .more1 .bg1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #FFF;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+.action1 .price1 {
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    background: #FFF;
+}
+.action1 .old-price1 {
+    font-size: 12px;
+    padding: 0 0 0 13px;
+}
+
+.action1 .old-price1 span {
+    text-decoration: line-through;
+}
+
+.action1 .new-price1 {
+    position: absolute;
+    right: 0px;
+    top: -15px;
+    background: url("strip000.png");
+    width: 95px;
+    height: 43px;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 0 0 19px;
+}
+
+.action1 .new-price1 span {
+    font-size: 18px;
+    margin: 0 3px 0 0;
+}
+
+.action1 .end1 {
+    position: relative;
+    height: 19px;
+	background:#e2e3e4;
+    padding: 3px 13px 0px 13px;
+}
+
+
+.action1 .end1 .label1 {
+    font-size: 11px;
+	margin:2px;
+}
+
+.action1 .end1 .timer1 {
+    position: absolute;
+    right: 13px;
+    top: 3px;
+    font-size: 14px;
+}
+
+.action1 .end1 .timer1 .days1,
+.action1 .end1 .timer1 .time1 {
+    display: inline-block;
+}
+
+.action1 .end1 .timer1 .days1 {
+    margin-right: 5px;
+}
+
+.action1  .ok1 {
+    position: relative;
+    height: 40px;
+    padding: 2px 13px 2px 13px;
+	
+}
+
+.action1  .ok1  .enter1{
+    font-size:26px;
+    position: relative;
+    height: 20px;
+    padding: 5px 13px 2px 13px;
+	text-align:center;
+	color: #fff
+}
+
+.action  .ok .enter a:link , a:visited
+{
+display:block;
+text-decoration:none;
+color: #3300CC
+}
+/*.action  .ok .enter a:hover,a:active
+{
+background-color:#fff;
+}
+*/
+.actions .see-more {
+    text-align: center;
+    margin: 24px 0 0 0;
+}
+
+.actions .see-more .btn {
+    font-size: 21px;
+    padding: 3px 20px;
+}

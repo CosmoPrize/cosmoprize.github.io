@@ -1,0 +1,176 @@
+﻿* {
+    font-family: neosanspro, arial, sans-serif;
+}
+
+.info-block .header {
+    margin: 15px 0 25px 0;
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow:-1px -1px 1px rgba(255,255,255,0.2),
+    1px 1px 1px rgba(255,255,255,0.2),
+    1px 1px 1px rgba(0,0,0,0.7);
+}
+
+.info-block .header .card {
+    font-size: 57px;
+}
+
+.info-block .header .blanche {
+    font-size: 57px;
+    font-weight: bold;
+}
+
+.info-block .body {
+    padding: 0 0 0 0px;
+    min-height: 100px;
+
+}
+
+.how-it-works .body {
+    background: url("../paint/main-pic-1.png") no-repeat;
+}
+
+.info-block .body .row {
+    position: relative;
+    margin: 0 0 24px 0;
+    font-size: 18px;
+}
+
+.info-block .body .subtitle {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.info-block .body .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 33px;
+    height: 49px;
+    background: url("../paint/main-list-nbrs.png");
+}
+
+.info-block .body .icon-2 {
+    background-position: 0 -52px;
+}
+
+.info-block .body .icon-3 {
+    background-position: 0 -102px;
+}
+
+.info-block .body .icon-4 {
+    background-position: 0 -152px;
+}
+
+.info-block .body .icon-5 {
+    background-position: 3px -202px;
+}
+
+.earn-now .body {
+    background: url("../paint/main-pic-2.png") no-repeat;
+}
+
+.earn-now .row {
+    padding: 0 0 0 55px;
+    min-height: 50px;
+}
+
+.earn-now .row .subtitle {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+}
+
+.guaranty {
+    padding: 0px 0 0 0px;
+    background: url("../paint/maney-back.jpg") 50px 0 no-repeat;
+}
+
+.guaranty .row {
+    padding: 0 0 0 0px;
+	text-align: center;
+    min-height: 50px;
+}
+
+.guaranty .body, .guaranty .header {
+    text-align: center;
+	
+}
+
+.guaranty .header {
+    font-size: 30px;
+    text-align: center;
+}
+
+.guaranty .autograph {
+    margin: 20px 0 0 0;
+    width: 487px;
+    height: 210px;
+    background: url("../paint/autograph.png");
+}
+
+.issue {
+    margin: 20px auto 20px auto;
+    position: relative;
+    background: url("../paint/issue.jpg");
+    width: 698px;
+    height: 413px;
+}
+
+.issue .title {
+    position: absolute;
+    width: 440px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #FFF;
+    right: 10px;
+    text-align: center;
+}
+
+.issue .label {
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    width: 204px;
+    right: 16px;
+    top: 130px;
+    font-size: 19px;
+}
+
+.issue .label span {
+    font-size: 34px;
+}
+
+.issue .old-price {
+    position: absolute;
+    top: 239px;
+    right: 167px;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.issue .new-price {
+    position: absolute;
+    top: 225px;
+    right: 10px;
+    width: 135px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 15px;
+}
+
+.issue .new-price span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.issue .btn {
+    font-size: 24px;
+    position: absolute;
+    top: 301px;
+    right: 40px;
+}
